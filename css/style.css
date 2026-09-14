@@ -1,0 +1,192 @@
+/*Hero code from playground style HERO A with DARK OVERLAY  CENTERED TEXT  BUTTONS*/
+/*image is in css code*/
+
+/*text for heading and h1 colors listed at bottom of css in order to change to orange*/
+.hero-a{
+  
+  min-height:520px;
+  
+  /* YOUR IMAGE: Replace this URL with your own hero background image.
+     Use a large photo (at least 1400px wide). background-size:cover
+     makes it fill the entire hero area. background-position:center
+     keeps the focal point centered when the browser resizes. */
+  background-image: url(../images/pumpkinpatch.jpg);
+
+
+
+  background-size:cover;
+  background-position:center;
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+/*dark overlay color*/
+.hero-a::before{
+  
+  content:'';
+  position:absolute;
+  inset:0;
+  /*dark overlay*/
+  background:rgba(0,0,0,.55);
+}
+
+.hero-a-content{
+  position:relative;
+  z-index:1;
+  max-width:680px;
+  padding:40px 24px;
+}
+
+.hero-a-eyebrow{
+  
+  display:inline-block;
+  
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  /*color changes for Halloween theme*/
+  color:#8f6023;
+  border:1px solid rgba(123, 24, 123, 0.35);
+  
+  background:rgba(4, 161, 151, 0.1);
+  padding:5px 16px;
+  border-radius:999px;
+  
+  margin-bottom:20px;
+}
+
+/*ChatGPT help with heading */
+  /*color changes for Halloween theme*/
+.hero-a h2{
+  font-size:clamp(2.4rem,5vw,4rem);
+  color:#d88f41;
+  
+  line-height:1.05;
+  letter-spacing:-.02em;
+  margin-bottom:18px;
+}
+
+.hero-a p{
+    /*color changes for Halloween theme*/
+  font-size:1.1rem;
+   color:#f68c1b;
+  
+  max-width:480px;
+  margin:0 auto 32px;
+  line-height:1.65;
+}
+
+
+/*ChatGPT help with getting color back in buttons*/
+  /*color changes for Halloween theme*/
+.btn-hero-primary {
+  display: inline-block;
+  padding: 13px 30px;
+  border-radius: 999px;
+
+  background: #07b31b;
+  color: #75389e;
+/*added border*/
+  border: 1.5px solid #dba664;
+
+  font-weight: 700;
+  font-size: .9rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.btn-hero-primary:hover {
+  background: #d93706;
+  transform: translateY(-2px);
+}
+
+
+.btn-hero-outline {
+  display: inline-block;
+  padding: 13px 30px;
+  border-radius: 999px;
+  /*color changes for Halloween theme*/
+  background:  #75389e;
+  color: #07b31b;
+
+  border: 1.5px solid #dba664;
+
+  font-weight: 600;
+  font-size: .9rem;
+  text-decoration: none;
+  transition: all .2s;
+}
+  /*color changes for Halloween theme*/
+.btn-hero-outline:hover {
+  background: #33143a;
+  border-color: #947272;
+  color: #922828;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+.hero-demo{
+  
+  position:relative;
+  width:100%;
+  
+  overflow:hidden;
+  border-radius:16px;
+  
+  margin-bottom:8px;
+}
+
+/*video code from Playground*/
+/*ChatGPT assistance removed body to fix new added Google Font text*/
+
+/*Google Fonts Creepster*/
+.creepster-regular {
+  font-family: "Creepster", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+/* Centred, rounded frame with a soft drop shadow */
+.video-frame {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,.5);
+  background: #000;
+}
+.video-frame video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Caption under the player */
+/*Color change to bring attention light orange*/
+.media-caption {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #dbb896;
+  margin-top: 12px;
+}
+
+/*Chatgpt helped with info not appearing at top and bottom of page due to text color original background and text were dark
+ChatGPT gave me white text I changed it by hand to orange to match the Halloween theme of the webpage*/
+/*changed color by hand for background and text*/
+
+  body {
+  background: #21102c;
+  color: rgb(209, 140, 60);
+  font-family: "Creepster", system-ui;
+}
+
