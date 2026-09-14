@@ -1,2 +1,3 @@
 # mccarthy-ai-mini
-AI Mini project creating images and video
+Module 3 AI Mini project creating images and video
+
